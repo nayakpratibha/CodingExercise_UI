@@ -1,0 +1,48 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "name": "student222",
+        "email": "student222@gmail.com",
+        "status": "222222"
+      },
+      {
+        "id": 2,
+        "name": "student333",
+        "email": "student333@gmail.com",
+        "status": "333333"
+      },
+      {
+        "id": 3,
+        "name": "student444",
+        "email": "student444@gmail.com",
+        "status": "44444"
+      },
+      {
+        "id": "4",
+        "name": "sadf",
+        "email": "asdfasdf@gmail.com",
+        "status": "3453453"
+      },
+      {
+        "id": "5",
+        "name": "asdfasdf",
+        "email": "asdfadf@gmail.com",
+        "status": "56756765"
+      }
+    ],
+    "tableHeader": [
+        {
+            "id": "1",
+            "value": "Username"
+        },
+        {
+            "id": "2",
+            "value": "Name"
+        },
+        {
+            "id": "3",
+            "value": "Status"
+        } 
+    ]
+  }

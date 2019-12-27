@@ -1,0 +1,82 @@
+
+.login-header {
+  background-color: #c0c0c0;
+  min-height: 110vh;
+  position: fixed;
+}
+.App-header {
+  background-color: #c0c0c0;
+  min-height: 75em;
+}
+.form-header {
+  padding: 30px;
+}
+.form-card {
+  width: 40%;
+  position: absolute !important;
+  margin-top: 6em;
+  margin-left: 22em;
+  align-items: center;
+  background-color: orange !important;
+}
+.login-text {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 1em;
+  font-weight: 700;
+}
+.form-button {
+  float: right;
+}
+.horizontal-cls {
+  width: 40%;
+  background-color: white;
+  margin-bottom: 6vh;
+}
+.search-card {
+  margin-top: 0.5em;
+  height: 11em;
+  width: 85%;
+  margin-left: 5.5em;
+  margin-bottom: 1em;
+}
+.search-section {
+    margin: 0.5em;
+    height: 10em;
+    background-color: orange;
+    align-items: center;
+}
+.column-one {
+   padding-left: 90px;
+}
+.form-label {
+  font-family: auto;
+  font-size: 25px;
+}
+.column-two {
+   padding-top: 3em;
+   padding-right: 5em;
+}
+.search-button {
+   float: right;
+   height: 3em;
+   width: 7em;
+}
+.table-card {
+  height: 60.2em;
+  width: 85%;
+  margin-left: 5.5em;
+}
+.table-section {
+  margin: 0.5em;
+  height: 59em;
+  background-color: lightgrey;
+}
+.error-text {
+  font-size: 14px;
+  width: 50%;
+  margin-bottom: 6vh;
+}
+.red-bg {
+  background-color: red !important;
+}
