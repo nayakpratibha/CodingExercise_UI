@@ -10,12 +10,6 @@ class TableCustom extends Component {
         };
     }
 
- componentWillReceiveProps(nextProps) {
-     if (this.state.tableDataColumns !== nextProps.tableDataColumns) {
-        this.setState({ tableDataColumns: nextProps.tableDataColumns });
-     }
-  }
-
  tableBody = () => {
     const dataColumns = this.state.tableDataColumns;
     return dataColumns.map((row) => {

@@ -15,7 +15,6 @@ class LoginForm extends Component {
             tableColumns: []
         };
     }
-
     onSearchInputChange = (e) => {
         let { searchInput } = this.state;
         searchInput = e.target.value;
@@ -28,7 +27,9 @@ class LoginForm extends Component {
 
       onSearch = (e) => {
         e.preventDefault()
-        let { searchInput , cookie } = this.state;
+        let { searchInput , cookie, showSearchResults } = this.state;
+        showSearchResults = false;
+        const tableColumns = [];
         let cookieData = cookie[0].split(";");
         cookie = cookieData[0];
         const params = {
@@ -39,15 +40,14 @@ class LoginForm extends Component {
             .then((response) => {
                 console.log(response);
                 if (response.data) {
-                     let { tableColumns } = this.state;
                      tableColumns.push(response.data);
-                    this.setState({ showSearchResults: true, tableColumns });
+                     showSearchResults = true;
                 }
+                this.setState({ showSearchResults, tableColumns : tableColumns });
             })
             .catch((error) => {
                 console.log(error);
-            });
-      }
+            });      }
       renderTable () {
           if (this.state.showSearchResults) {  
             const tableHeader = TableJson["tableHeader"];
